@@ -1,4 +1,4 @@
-var dogImg, happyDogImg, dog, database, foodS, foodStock, canvas, lastFed, fedTime, foodObj, feed, addFood, food1, foodCount;
+var dogImg, happyDogImg, dog, database, foodS, foodStock, canvas, lastFed, fedTime, foodObj, feed, addFood, food1, foodCount, input;
 
 function preload() {
   dogImg = loadImage('images/Dog.png');
@@ -29,6 +29,9 @@ function setup() {
   feed = createButton("Feed the dog");
   feed.position(430, 35);
   feed.mousePressed(feedDog);
+
+  input = createInput("Name your Dog");
+  input.position(350, 60);
 
   canvas = createCanvas(800, 400);
 }
